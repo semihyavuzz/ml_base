@@ -1,0 +1,6 @@
+.idea/*
+data/*
+runs/*
+models/**/*.pyc
+helpers/**/*.pyc
+runners/**/*.pyc
