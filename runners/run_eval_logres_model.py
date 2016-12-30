@@ -21,7 +21,7 @@ def compute_predictions(model, X, Y):
 def main():
     parser = argparse.ArgumentParser("run_train_logres_model.py")
     parser.add_argument("--model_file", type=str,
-                        help="Path to a file in which the trained model is stored")
+                        help="Path to a file (.npz file) in which the trained model is stored")
     parser.add_argument("--features_file", type=str,
                         help="Training data features, each line is corresponding to "
                              "one example's features, separated by space")
