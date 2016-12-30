@@ -45,9 +45,9 @@ def train_logistic_regression(model, checkpoint_dir,
             dev_avg_loss, dev_std_loss, dev_acc = model.calculate_total_loss(X_dev, Y_dev)
             dev_accs.append(dev_acc)
             time = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-            print("{0}: Progress after {1} epochs and {2} examples seen\n"
-                  "Train-set: avg_loss={3}, std_loss:{4}, acc={5}\n"
-                  "Dev-set  : avg_loss={6}, std_loss:{7}, acc={8}".format(time, epoch, num_examples_seen,
+            print("\n{0}: Progress after {1} epochs and {2} examples seen"
+                  "\nTrain-set: avg_loss={3}, std_loss:{4}, acc={5}"
+                  "\nDev-set  : avg_loss={6}, std_loss:{7}, acc={8}".format(time, epoch, num_examples_seen,
                                                                           tr_avg_loss, tr_std_loss, tr_acc,
                                                                           dev_avg_loss, dev_std_loss, dev_acc))
 
@@ -161,6 +161,8 @@ def main():
     # training
     # load training data
     X, Y = load_data(args.tr_features_file, args.tr_targets_file)
+    assert X.shape[1] == args.input_dim, "Number of features in provided features file do not agree with the" \
+                                         "corresponding argument provided via input_dim"
 
     # init model
     _INPUT_DIM = np.int32(args.input_dim)
