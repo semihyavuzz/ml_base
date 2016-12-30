@@ -1,6 +1,6 @@
 # Basic ML Tools
 
-Package for basic ML tools for classification and clustering. 
+Package for basic ML tools for general classification and ranking. 
 
 ## Getting Started
 
