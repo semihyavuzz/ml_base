@@ -1,6 +1,7 @@
 .idea/*
-data/*
 runs/*
+notebooks/*
+helpers/prepare_sample_data.py
 models/**/*.pyc
 helpers/**/*.pyc
 runners/**/*.pyc

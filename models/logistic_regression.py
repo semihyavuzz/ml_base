@@ -90,7 +90,6 @@ class LogisticRegression:
         self.predict = theano.function(inputs=[x], outputs=prediction)
         self.error = theano.function(inputs=[x, y], outputs=xent)
 
-    # TODO: continue here
     def calculate_total_loss(self, X, Y):
         (n, dim) = X.shape
         columns = np.arange(dim)
