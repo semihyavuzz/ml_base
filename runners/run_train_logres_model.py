@@ -1,4 +1,4 @@
-"""Runner for training a Logistic Regression Model"""
+"""Runner module for training a Logistic Regression Model"""
 __author__ = "semih yavuz"
 
 import sys, os, time

@@ -1,4 +1,4 @@
-"""Description"""
+"""Runner module for evaluating a trained logistic regression model"""
 __author__ = "semih yavuz"
 
 import numpy as np

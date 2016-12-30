@@ -1,4 +1,4 @@
-"""Input/Output helper functions"""
+"""Helper module for file I/O utilities"""
 __author__ = "semih yavuz"
 import numpy as np
 import codecs

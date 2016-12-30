@@ -1,4 +1,4 @@
-"""Description"""
+"""Helper module for preparing/formatting data"""
 __author__ = "semih yavuz"
 
 import numpy as np
