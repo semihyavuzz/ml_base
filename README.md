@@ -60,6 +60,8 @@ General purpose logistic regression model for data with real-valued features.
 
 * **Example training run for sanity check**:
 ```bashscript
+cd ml_base
+mkdir runs
 python runners/run_train_logres_model.py \
 --main_out_dir runs/ \
 --tr_features_file data/train_features.txt \
